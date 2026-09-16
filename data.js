@@ -1,14 +1,11 @@
 /*
   ============================================================
-  PROJECT DATA — THIS IS THE MAIN FILE YOU WILL EDIT.
+  PROJECT DATA — THIS IS THE MAIN FILE YOU EDIT.
   ============================================================
 
-  To add a project:
-  1. Copy one project object.
-  2. Paste it at the bottom of the projects array.
-  3. Change the information.
-  4. Put your files inside projects/project-02/ (etc.).
-  5. Save.
+  You now have 4 ready-to-edit project slots.
+  For each project, change the title, date, description,
+  contribution, learnings and file paths.
 
   You do NOT need to edit the website layout or JavaScript.
 */
@@ -24,22 +21,66 @@ const site = {
 const projects = [
   {
     number: "01",
-    title: "MARKETING CASE STUDY",
-    date: "SEPTEMBER 2026",
+    title: "PROJECT 01 — ADD TITLE",
+    date: "TBD",
     category: "IIS",
-    description: "Add a short description of what this project was about.",
-    contribution: "Add a short description of what you personally worked on.",
+    accent: "blue",
+    description: "Write a short description of what this project was about.",
+    contribution: "Write a short description of what you personally worked on.",
     learnings: [
       "Add your first key learning.",
       "Add your second key learning.",
       "Add your third key learning."
     ],
-    files: [
-      { label: "VIEW REPORT", path: "projects/project-01/report.pdf" },
-      { label: "VIEW PRESENTATION", path: "projects/project-01/presentation.pdf" }
+    files: [],
+    images: []
+  },
+  {
+    number: "02",
+    title: "PROJECT 02 — ADD TITLE",
+    date: "TBD",
+    category: "IIS",
+    accent: "violet",
+    description: "Write a short description of what this project was about.",
+    contribution: "Write a short description of what you personally worked on.",
+    learnings: [
+      "Add your first key learning.",
+      "Add your second key learning.",
+      "Add your third key learning."
     ],
+    files: [],
+    images: []
+  },
+  {
+    number: "03",
+    title: "PROJECT 03 — ADD TITLE",
+    date: "TBD",
+    category: "IIS",
+    accent: "cyan",
+    description: "Write a short description of what this project was about.",
+    contribution: "Write a short description of what you personally worked on.",
+    learnings: [
+      "Add your first key learning.",
+      "Add your second key learning.",
+      "Add your third key learning."
+    ],
+    files: [],
+    images: []
+  },
+  {
+    number: "04",
+    title: "PROJECT 04 — ADD TITLE",
+    date: "TBD",
+    category: "IIS",
+    accent: "pink",
+    description: "Write a short description of what this project was about.",
+    contribution: "Write a short description of what you personally worked on.",
+    learnings: [
+      "Add your first key learning.",
+      "Add your second key learning.",
+      "Add your third key learning."
+    ],
+    files: [],
     images: []
   }
-
-  // COPY THE OBJECT ABOVE TO ADD PROJECT 02, 03, 04...
 ];

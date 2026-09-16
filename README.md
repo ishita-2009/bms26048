@@ -4,72 +4,79 @@ A personal academic archive for Ishita Chopra for **Introduction to Information 
 
 The website is intentionally built without a complicated build system. You can update the content by editing one simple file and adding files to clearly named folders.
 
+## What is already set up
+
+- 4 ready-to-edit project slots
+- Automatic vertical project timeline
+- Different subtle accent colours across the project cards
+- Reusable project pages
+- CV section ready for `cv/CV.pdf`
+- GitHub + Netlify friendly — no build command needed
+
 ## Folder guide
 
 ```text
 iis-academic-archive/
-├── index.html          # Homepage
-├── project.html        # Reusable project page
-├── data.js             # EDIT THIS for your personal details + projects
-├── script.js            # Website interactions — normally don't edit
-├── project.js           # Project page logic — normally don't edit
-├── style.css            # Website design — normally don't edit
+├── index.html
+├── project.html
+├── data.js             # EDIT THIS for project content
+├── script.js           # Website interactions — normally don't edit
+├── project.js          # Project page logic — normally don't edit
+├── style.css           # Website design — normally don't edit
 ├── projects/
-│   └── project-01/      # Put Project 01 files here
+│   ├── project-01/     # Put Project 01 files here
+│   ├── project-02/     # Put Project 02 files here
+│   ├── project-03/     # Put Project 03 files here
+│   └── project-04/     # Put Project 04 files here
 ├── cv/
-│   └── CV.pdf           # Replace this file when your CV changes
-└── assets/              # Optional images/assets
+│   └── CV.pdf          # Replace this file when your CV changes
+└── assets/
 ```
 
-## Add a new project
+## Edit a project
 
-1. Open the `projects` folder.
-2. Create a new folder, for example `project-02`.
-3. Put the project's PDFs, presentations and images inside it.
-4. Open `data.js`.
-5. Copy the existing project object.
-6. Paste it after the existing project.
-7. Change the number, title, date, description, contribution, learnings and file paths.
-8. Save.
+Open `data.js`. There are 4 project objects already there.
+
+For example, change:
+
+```js
+title: "PROJECT 01 — ADD TITLE",
+date: "TBD",
+```
+
+to something like:
+
+```js
+title: "INFORMATION SYSTEMS CASE STUDY",
+date: "OCTOBER 2026",
+```
+
+Then update the description, your contribution, learnings and files in the same project object.
+
+You do **not** need to edit the HTML, JavaScript or CSS when adding normal coursework.
+
+## Add project files
+
+Put files inside the matching project folder.
 
 Example:
 
-```js
-{
-  number: "02",
-  title: "YOUR PROJECT TITLE",
-  date: "OCTOBER 2026",
-  category: "IIS",
-  description: "What the project was about.",
-  contribution: "What you personally did.",
-  learnings: [
-    "Learning one.",
-    "Learning two."
-  ],
-  files: [
-    { label: "VIEW REPORT", path: "projects/project-02/report.pdf" }
-  ],
-  images: []
-}
-```
-
-The project card, project page, previous/next buttons and timeline update automatically.
-
-## Add a PDF
-
-Put the PDF in the project's folder.
-
-For example:
-
 ```text
-projects/project-02/report.pdf
+projects/project-01/report.pdf
+projects/project-01/presentation.pdf
+projects/project-01/image.jpg
 ```
 
-Then use this path in `data.js`:
+Then add the file to that project's `files` list in `data.js`:
 
 ```js
-{ label: "VIEW REPORT", path: "projects/project-02/report.pdf" }
+files: [
+  { label: "VIEW REPORT", path: "projects/project-01/report.pdf" },
+  { label: "VIEW PRESENTATION", path: "projects/project-01/presentation.pdf" }
+]
 ```
+
+The project card, project page, previous/next buttons and timeline update automatically from the project list.
 
 ## Update your CV
 
@@ -85,48 +92,13 @@ Keep the filename exactly `CV.pdf`.
 
 No website code needs to change.
 
-## Update your name, BMS ID or email
-
-At the top of `data.js`, replace:
-
-```js
-name: "[MY NAME]",
-bmsId: "[MY BMS ID]",
-email: "[MY SCHOOL EMAIL]"
-```
-
 ## Publishing with GitHub + Netlify
 
-This project is a normal static website, so Netlify can publish it directly.
+This is a normal static website. The repository should contain `index.html` directly at its top level.
 
-### First upload
+Because there is no build system:
 
-Create a GitHub repository and upload the contents of this folder.
+- Build command: leave blank
+- Publish directory: use the repository root/default
 
-The repository should contain `index.html` directly at its top level.
-
-Then connect that repository to Netlify and choose the repository as the site source.
-
-Because this is a static site, there is no build command and no publish/build folder to configure.
-
-### Future updates
-
-Whenever you change `data.js` or add a project file:
-
-1. Upload/save the changes to GitHub.
-2. Netlify detects the GitHub change.
-3. Netlify publishes the updated website automatically.
-
-## Important
-
-Do not rename these files unless you also change the references in the code:
-
-- `index.html`
-- `project.html`
-- `data.js`
-- `script.js`
-- `project.js`
-- `style.css`
-- `cv/CV.pdf`
-
-You can safely add as many `project-02`, `project-03`, `project-04`, etc. folders as needed.
+After connecting the GitHub repository to Netlify, future changes pushed to GitHub can trigger a new deployment automatically.
