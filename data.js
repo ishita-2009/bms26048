@@ -21,11 +21,11 @@ const site = {
 const projects = [
  {
     number: "01",
-    title: "PROJECT 01 —(not given yet)",
-    date: "TBD",
+    title: "PROJECT 01 —Group Project 01",
+    date: "04 October 2026",
     category: "IIS",
-    accent: "violet",
-    description: "Write a short description of what this project was about.",
+    accent: "blue",
+    description: "About the project: <br> The project involved conducting an extensive company analysis of State Bank of India (SBI), covering its business operations, financial performance, market position, competitive landscape and future growth prospects. The objective was to evaluate SBI through both qualitative and quantitative research, using financial data, historical trends, competitor comparisons, charts and credible secondary sources. <br> The team compiled its research into a comprehensive, interactive HTML website, bringing together all sections of the report in a structured and accessible format. The completed website was also uploaded and hosted on Netlify.",
     contribution: "Write a short description of what you personally worked on.",
     learnings: [
       "Add your first key learning.",
