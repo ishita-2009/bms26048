@@ -25,12 +25,9 @@ const projects = [
     date: "04 October 2026",
     category: "IIS",
     accent: "blue",
-    description: "About the project: <br> The project involved conducting an extensive company analysis of State Bank of India (SBI), covering its business operations, financial performance, market position, competitive landscape and future growth prospects. The objective was to evaluate SBI through both qualitative and quantitative research, using financial data, historical trends, competitor comparisons, charts and credible secondary sources. <br> The team compiled its research into a comprehensive, interactive HTML website, bringing together all sections of the report in a structured and accessible format. The completed website was also uploaded and hosted on Netlify.",
-    contribution: "Write a short description of what you personally worked on.",
-    learnings: [
-      "Add your first key learning.",
-      "Add your second key learning.",
-      "Add your third key learning."
+    description: " <br>About the project:</br> The project involved conducting an extensive company analysis of State Bank of India (SBI), covering its business operations, financial performance, market position, competitive landscape and future growth prospects. The objective was to evaluate SBI through both qualitative and quantitative research, using financial data, historical trends, competitor comparisons, charts and credible secondary sources. <br><br> The team compiled its research into a comprehensive, interactive HTML website, bringing together all sections of the report in a structured and accessible format. The completed website was also uploaded and hosted on Netlify.",
+    contribution: "<b>Write a short description of what you personally worked on.</b><br> Worked on Pages 66–78, covering Stock Details, Conservative Revenue Guidance Strategy, Conservative EPS Guidance Strategy, Actual Revenue Results vs. Expectations, Actual EPS Results vs. Expectations, SBI Historical Revenue Growth, Competitors' Historical Revenue Growth, SBI Historical EPS Growth, Competitors' Historical EPS Growth and SBI Historical Gross Margin. Conducted financial research, analysed historical data, developed numerical comparisons and charts, and contributed to compiling the final website. Also uploaded and hosted the completed website on Netlify.",
+    website:"bms26048.netlify.app"
     ],
     files: [],
     images: []
